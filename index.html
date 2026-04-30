@@ -3,60 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ratecard Kiky - Graphic Designer</title>
+    <title>Ratecard Design - Kiky</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #fcfcfc;
             --text-main: #1d1d1f;
-            --text-muted: #86868b;
+            --text-muted: #66666b;
             --accent: #ff4d4d; 
             --card-bg: #ffffff;
-            --shadow: 0 8px 30px rgba(0,0,0,0.04);
+            --shadow: 0 4px 20px rgba(0,0,0,0.03);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.5; }
         
-        header { text-align: center; padding: 80px 0 40px; }
-        header h1 { font-size: 3rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 10px; }
+        .container { max-width: 700px; margin: 0 auto; padding: 0 20px; }
         
-        .service-category { margin-top: 60px; }
-        .service-category h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        /* Merapatkan header */
+        header { text-align: center; padding: 40px 0 20px; }
+        header h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 5px; }
+        header p { color: var(--text-muted); font-size: 1rem; }
         
-        .section-note { font-size: 0.85rem; color: var(--accent); margin-bottom: 25px; font-style: italic; display: block; }
+        /* Merapatkan section category */
+        .service-category { margin-top: 30px; }
+        .service-category h2 { 
+            font-size: 0.75rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            color: var(--text-muted); 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 8px; 
+        }
         
-        .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-        .card { background: var(--card-bg); padding: 30px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid #f0f0f0; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .card h3 { font-size: 1.2rem; margin-bottom: 15px; }
+        .section-note { 
+            font-size: 0.8rem; 
+            color: var(--accent); 
+            margin-bottom: 15px; 
+            font-style: italic; 
+            display: block; 
+            line-height: 1.4;
+        }
+        
+        .grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        
+        .card { 
+            background: var(--card-bg); 
+            padding: 20px 25px; 
+            border-radius: 16px; 
+            box-shadow: var(--shadow); 
+            border: 1px solid #f0f0f0; 
+        }
+        
+        .card h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--text-main); }
 
         ul { list-style: none; }
-        ul li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f9f9f9; font-size: 0.95rem; }
-        ul li strong { color: var(--accent); font-weight: 600; }
+        ul li { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 8px 0; 
+            border-bottom: 1px solid #fbfbfb; 
+            font-size: 0.9rem; 
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li strong { color: var(--text-main); font-weight: 600; }
 
-        .highlight { background: var(--text-main); color: white; }
+        /* Highlight untuk paket kuota agar kontras */
+        .highlight { background: #1d1d1f; color: white; border: none; }
         .highlight h3 { color: white; }
-        .highlight ul li { border-bottom: 1px solid #333; }
+        .highlight ul li { border-bottom: 1px solid #2d2d2d; }
         .highlight ul li strong { color: #ff7e7e; }
 
-        .terms { margin-top: 60px; padding: 30px; background: #f4f4f7; border-radius: 20px; font-size: 0.9rem; }
-        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.8rem; }
+        .terms { 
+            margin-top: 50px; 
+            padding: 25px; 
+            background: #f4f4f7; 
+            border-radius: 16px; 
+            font-size: 0.85rem; 
+            color: var(--text-muted);
+        }
+        .terms h4 { color: var(--text-main); margin-bottom: 10px; }
+        
+        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.75rem; }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 2rem; }
+            .card { padding: 15px 20px; }
+        }
     </style>
 </head>
 <body>
 
     <header class="container">
         <h1>Ratecard.</h1>
-        <p>Penawaran jasa desain grafis khusus untuk kebutuhan brand Anda.</p>
+        <p>Layanan Desain Grafis Profesional</p>
     </header>
 
     <main class="container">
-        <!-- Data dari WhatsApp Image 2026-04-30 at 13.29.44.jpeg -->
+        <!-- 01. Single Feed -->
         <section class="service-category">
             <h2>01. Single Feed</h2>
-            <span class="section-note">*Brief disediakan client / +Rp10k per slide untuk ide konten</span>
+            <span class="section-note">Brief disediakan client / +Rp10.000 per slide jika request ide konten</span>
             <div class="grid">
                 <div class="card">
                     <ul>
@@ -69,9 +117,10 @@
             </div>
         </section>
 
+        <!-- 02. Paket Konten -->
         <section class="service-category">
             <h2>02. Paket Konten (Kuota)</h2>
-            <span class="section-note">*Include copywriting & content research/ideas</span>
+            <span class="section-note">Include copywriting & content research/ideas</span>
             <div class="grid">
                 <div class="card highlight">
                     <ul>
@@ -84,40 +133,51 @@
             </div>
         </section>
 
+        <!-- 03. Monthly Package -->
         <section class="service-category">
             <h2>03. Monthly (Periode)</h2>
-            <span class="section-note">*Include copywriting, plan, schedule, & IG Story</span>
+            <span class="section-note">Include copywriting, content plan, schedule, timeline & IG Story</span>
             <div class="grid">
                 <div class="card">
                     <h3>Paket 6 Konten</h3>
                     <ul>
-                        <li>6 Single + 3 Story <strong>Rp450.000</strong></li>
-                        <li>6 Carousel + 3 Story <strong>Rp850.000</strong></li>
-                        <li>6 Mix + 3 Story <strong>Rp650.000</strong></li>
+                        <li>6 Single + 3 IG Story <strong>Rp450.000</strong></li>
+                        <li>6 Carousel + 3 IG Story <strong>Rp850.000</strong></li>
+                        <li>6 Mix + 3 IG Story <strong>Rp650.000</strong></li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3>Paket 9 Konten</h3>
                     <ul>
-                        <li>9 Single + 3 Story <strong>Rp650.000</strong></li>
-                        <li>9 Carousel + 3 Story <strong>Rp1.200.000</strong></li>
-                        <li>9 Mix + 3 Story <strong>Rp950.000</strong></li>
+                        <li>9 Single + 3 IG Story <strong>Rp650.000</strong></li>
+                        <li>9 Carousel + 3 IG Story <strong>Rp1.200.000</strong></li>
+                        <li>9 Mix + 3 IG Story <strong>Rp950.000</strong></li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3>Paket 12 Konten</h3>
                     <ul>
-                        <li>12 Single + 4 Story <strong>Rp850.000</strong></li>
-                        <li>12 Carousel + 4 Story <strong>Rp1.550.000</strong></li>
-                        <li>12 Mix + 4 Story <strong>Rp1.250.000</strong></li>
+                        <li>12 Single + 4 IG Story <strong>Rp850.000</strong></li>
+                        <li>12 Carousel + 4 IG Story <strong>Rp1.550.000</strong></li>
+                        <li>12 Mix + 4 IG Story <strong>Rp1.250.000</strong></li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <!-- S&K Administrasi -->
+        <section class="terms">
+            <h4>Syarat & Ketentuan</h4>
+            <ul>
+                <li>• DP 50% di awal pengerjaan.</li>
+                <li>• Estimasi pengerjaan sesuai antrean dan tingkat kesulitan.</li>
+                <li>• File master dikirim setelah pelunasan.</li>
+            </ul>
+        </section>
     </main>
 
-    <footer class="container">
-        <p>&copy; 2026 Studio Desain. Update terakhir: April 2026.</p>
+    <footer>
+        <p>&copy; 2026 Studio Desain. Data diperbarui April 2026.</p>
     </footer>
 
 </body>
