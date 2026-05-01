@@ -1,193 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyra Designed - Ratecard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #F9F6E5; /* Cream dari logo image_b74a19.png */
-            --primary-color: #003831; /* Deep Forest Green dari logo */
-            --text-muted: #4a5d5a;
-            --border-color: rgba(0, 56, 49, 0.15);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--primary-color); line-height: 1.6; }
-        
-        .container { max-width: 600px; margin: 0 auto; padding: 0 24px; }
-        
-        /* Header Styling sesuai Logo */
-        header { text-align: center; padding: 80px 0 40px; }
-        header h1 { 
-            font-size: 2.8rem; 
-            font-weight: 900; 
-            letter-spacing: -1px; 
-            margin-bottom: 8px; 
-            text-transform: uppercase;
-        }
-        header p { 
-            color: var(--primary-color); 
-            font-size: 0.85rem; 
-            font-weight: 500; 
-            letter-spacing: 4px; 
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
-        
-        .service-category { margin-top: 50px; }
-        .service-category h2 { 
-            font-size: 1.1rem; 
-            font-weight: 700;
-            margin-bottom: 20px; 
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .service-category h2::before { content: "✦"; margin-right: 12px; font-size: 1rem; }
-        
-        .section-note { 
-            font-size: 0.75rem; 
-            color: var(--text-muted); 
-            margin-bottom: 15px; 
-            display: block; 
-            line-height: 1.4;
-            background: rgba(0, 56, 49, 0.05);
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-        
-        .card { 
-            background: transparent; 
-            border-top: 1.5px solid var(--primary-color);
-        }
-        
-        .card h3 { font-size: 0.8rem; margin-top: 20px; margin-bottom: 5px; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; }
-
-        ul { list-style: none; }
-        ul li { 
-            display: flex; 
-            justify-content: space-between; 
-            padding: 14px 0; 
-            border-bottom: 1px solid var(--border-color); 
-            font-size: 0.95rem; 
-        }
-        ul li:last-child { border-bottom: none; }
-        
-        ul li strong { 
-            font-weight: 700; 
-            font-size: 1rem; 
-        }
-
-        /* Box khusus paket kuota */
-        .highlight-box { 
-            background: rgba(0, 56, 49, 0.03); 
-            padding: 10px 20px; 
-            border-radius: 12px; 
-            border: 1px solid var(--border-color);
-        }
-
-        .terms { 
-            margin-top: 60px; 
-            padding: 30px 20px; 
-            background: var(--primary-color);
-            color: var(--bg-color);
-            border-radius: 16px;
-            margin-bottom: 40px;
-        }
-        .terms h4 { margin-bottom: 15px; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        .terms ul li { border-bottom: 1px solid rgba(249, 246, 229, 0.1); font-size: 0.85rem; color: #d1d1d1; }
-        .terms ul li:last-child { border: none; }
-        
-        footer { text-align: center; padding: 40px 0; color: var(--primary-color); font-size: 0.7rem; letter-spacing: 1px; opacity: 0.6; }
-
-        @media (max-width: 480px) {
-            header h1 { font-size: 2.2rem; }
-            header p { font-size: 0.7rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aflah Kuncoro - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Aflah Kuncoro</h1>
+    <p>GIS Analyst | Environmental Analyst | Map Maker</p>
+  </header>
 
-    <header class="container">
-        <h1>Kyra Designed</h1>
-        <p>Ratecard • Terms & Conditions</p>
-    </header>
+  <section>
+    <h2>About Me</h2>
+    <p>I'm a GIS enthusiast with a passion for creating meaningful maps and analyzing environmental data to support better decisions.</p>
+  </section>
 
-    <main class="container">
-        <!-- Single Feed Section -->
-        <section class="service-category">
-            <h2>Single Feed</h2>
-            <span class="section-note">Brief disediakan client / +Rp10.000 per slide jika request ide konten</span>
-            <div class="card">
-                <ul>
-                    <li>Single Design (1 slide) <strong>Rp50.000</strong></li>
-                    <li>Carousel (2-3 slide) <strong>Rp100.000</strong></li>
-                    <li>IG Story <strong>Rp45.000</strong></li>
-                    <li>IG Story Mirror Feeds <strong>Rp30.000</strong></li>
-                </ul>
-            </div>
-        </section>
+  <section>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="https://medium.com/@aflahkuncoro/land-cover-classification-with-landsat-9-in-google-earth-engine-gee-908fdc2fe746" target="_blank">Land Cover Classification with Landsat 9 in Google Earth Engine (GEE)</a></li>
+      <li><a href="https://aflahkuncoro.medium.com/quick-integrated-deforestation-alert-with-google-earth-engine-gee-3137f8bdd7e2" target="_blank">Quick Integrated Deforestation Alert with Google Earth Engine (GEE)</a></li>
+      <!-- You can add more portfolio items here -->
+    </ul>
+  </section>
 
-        <!-- Paket Kuota Section -->
-        <section class="service-category">
-            <h2>Paket Konten (Kuota)</h2>
-            <span class="section-note">Sudah termasuk copywriting & content research/ideas</span>
-            <div class="highlight-box">
-                <ul>
-                    <li>6 Single Design <strong>Rp350.000</strong></li>
-                    <li>6 Carousel <strong>Rp750.000</strong></li>
-                    <li>9 Single Design <strong>Rp520.000</strong></li>
-                    <li>9 Carousel <strong>Rp1.100.000</strong></li>
-                </ul>
-            </div>
-        </section>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aflahkuncoro@gmail.com">aflahkuncoro@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/aflahkuncoro" target="_blank">Aflah Bening Kuncoro</a></p>
+  </section>
 
-        <!-- Monthly Section -->
-        <section class="service-category">
-            <h2>Monthly (Periode)</h2>
-            <span class="section-note">Sudah termasuk copywriting, content plan, schedule, timeline & IG Story</span>
-            
-            <div class="card">
-                <h3>Paket 6 Konten</h3>
-                <ul>
-                    <li>6 Single + 3 IG Story <strong>Rp450.000</strong></li>
-                    <li>6 Carousel + 3 IG Story <strong>Rp850.000</strong></li>
-                    <li>6 Mix + 3 IG Story <strong>Rp650.000</strong></li>
-                </ul>
-
-                <h3>Paket 9 Konten</h3>
-                <ul>
-                    <li>9 Single + 3 IG Story <strong>Rp650.000</strong></li>
-                    <li>9 Carousel + 3 IG Story <strong>Rp1.200.000</strong></li>
-                    <li>9 Mix + 3 IG Story <strong>Rp950.000</strong></li>
-                </ul>
-
-                <h3>Paket 12 Konten</h3>
-                <ul>
-                    <li>12 Single + 4 IG Story <strong>Rp850.000</strong></li>
-                    <li>12 Carousel + 4 IG Story <strong>Rp1.550.000</strong></li>
-                    <li>12 Mix + 4 IG Story <strong>Rp1.250.000</strong></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- T&C Section -->
-        <section class="terms">
-            <h4>Terms & Conditions</h4>
-            <ul>
-                <li>• DP 50% di awal pengerjaan untuk konfirmasi antrean.</li>
-                <li>• Estimasi pengerjaan dihitung sejak brief lengkap diterima.</li>
-                <li>• Penyerahan file master dilakukan setelah pelunasan akhir.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>KYRA DESIGNED • 2026 • ALL RIGHTS RESERVED</p>
-    </footer>
-
+  <footer>
+    <p>© 2025 Aflah Kuncoro</p>
+  </footer>
 </body>
 </html>
